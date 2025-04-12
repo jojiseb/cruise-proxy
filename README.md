@@ -1,6 +1,6 @@
 # Royal Caribs Ship & Offshore Proxy
 
-A two‑component proxy system that funnels all HTTP traffic from a ship through a single persistent TCP connection to an offshore server—minimizing TCP connection counts while preserving request/response fidelity.
+A two‑component proxy system that funnels all HTTP traffic from a ship through a single persistent TCP connection to an offshore server—minimizing TCP connection counts as part of cost-cutting.
 
 ## Prerequisites
 
