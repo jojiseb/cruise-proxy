@@ -1,0 +1,19 @@
+
+services:
+  offshore:
+    image: jojiseb/offshore-proxy:latest
+    container_name: offshore-proxy
+    ports:
+      - "8090:8090"   # HTTP port
+      - "9999:9999"   # TCP tunnel port
+
+  ship:
+    image: jojiseb/ship-proxy:latest
+    container_name: ship-proxy
+    ports:
+      - "8080:8080"   # HTTP proxy port
+    depends_on:
+      - offshore
+    environment:
+        OFFSHORE_PROXY_HOST: offshore
+        OFFSHORE_PROXY_TCP_PORT: 9999
