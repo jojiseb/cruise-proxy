@@ -12,7 +12,7 @@ A two‑component proxy system that funnels all HTTP traffic from a ship through
 
 ### Clone the repository
 
-git clone https://github.com/<your‑username>/ship-offshore-proxy.git
+git clone https://github.com/jojiseb/ship-offshore-proxy.git
 cd ship-offshore-proxy
 
 Pre-built Images
